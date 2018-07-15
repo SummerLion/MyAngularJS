@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to AngularJS!</title>
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-route.js"></script>
+    <script src="app.js"></script>
+    <script src="controller/loginCtrl.js"></script>
+    <script src="controller/registCtrl.js"></script>
+    <script src="config/rootConfig.js"></script>
+
+
+
+</head>
+<body ng-app='myApp'>
+
+<h2>AngularJS 应用</h2>
+<ul>
+    <li><a href="#/">首页</a></li>
+    <li><a href="#/login">登录</a></li>
+    <li><a href="#/regist">注册</a></li>
+
+</ul>
+<div ng-view></div>
+</body>
+</html>
