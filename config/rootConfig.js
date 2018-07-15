@@ -1,5 +1,11 @@
 myApp.config(['$routeProvider', function ($routeProvider) {
     $routeProvider
+        .when('/',
+            {
+                templateUrl: 'view/home.html',
+
+            }
+        )
         .when('/regist',
             {
                 templateUrl: 'view/regist.html',
@@ -11,9 +17,14 @@ myApp.config(['$routeProvider', function ($routeProvider) {
                 templateUrl: 'view/login.html',
                 controller: 'loginCtrl'
             })
+        .when('/products',
+            {
+                templateUrl: 'view/products.html',
+                controller: 'productsCtrl'
+            })
         .otherwise(
             {
-                redirectTo: '/home'
+                redirectTo: '/'
             }
         );
 }]);
